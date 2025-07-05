@@ -11,7 +11,7 @@ function App() {
   const speechRef = useRef(null);
   const fileInputRef = useRef(null);
 
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "http://localhost:5000" || "https://vocal-pdf-backend.onrender.com";
 
   const handleFileChange = (e) => {
     const uploadedFile = e.target.files[0];
